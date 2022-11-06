@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localização</title>
+    <style>
+    @font-face {
+        font-family: "Inter";
+        src: url(fontes/Inter/Inter-VariableFont_slnt\,wght.ttf)
+    }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      header {
+        background-color: white;
+        height: 14vh;
+        width: 100vw;
+        padding-top: 4vh;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+      }
+      header div:nth-child(2) {
+        height: 9vh;
+        width: 25vw;
+        border-bottom: 3px solid rgba(202, 45, 45, 1);
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: -2vw;
+      }
+      header h1 {
+        margin: 0;
+        height: 0;
+        width: 25vw;
+        text-align: center;
+        font-size: 4vw;
+      }
+
+      #bolinha {
+        height: 8vh;
+        width: 8vh;
+        border: 3px solid black;
+        background-color: red;
+        border-radius: 100%;
+        float: left;
+        margin-left: 4vh;
+    }
+      
+      #variedades {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      #variedades table {
+        width: 52vw;
+        display: inline;
+      }
+
+      .icon {
+        height: 15vh;
+      }
+      .direita {
+        float: right;
+      }
+      .direita + p {
+        text-align: end;
+        margin-right: 7.5vw;
+      }
+      .esquerda {
+        float: left;
+        margin-right: 2.5vw;
+      }
+      th {
+        font-size: 6vh;
+        padding-left: 2vw;
+      }
+      th h1 {
+        margin-bottom: 0;
+        text-align: left;
+      }
+      #legenda {
+        font-size: 3vh;
+        text-align: left;
+        font-weight: 400;
+        margin-bottom: 5vh;
+      }
+      td p {
+        font-size: 5vh;
+      }
+      .dir {
+        width: 10vh;
+      }
+      .esq {
+        width: 10vw;
+      }
+      #cards{
+        text-align: center;
+      }
+      .tiunder {
+        height: 9vh;
+        width: 40vw;
+        border-bottom: 3px solid rgba(202, 45, 45, 1);
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: 35%;
+        margin-top: 8vh;
+      }
+      .title {
+        margin: 0;
+        height: 0;
+        width: 40vw;
+        text-align: center;
+        font-size: 4vw;
+      }
+      .imagens_estações img{
+        height: 27.5vh;
+      }
+
+      #estacoes table tr td{
+        padding: 0vh 4vw; 
+      }
+      #estacoes table{
+        padding: 5vh 0;
+        display: inline-block;
+      }
+      .notas p{
+        color: rgba(245, 184, 0, 1);
+        font-size: 5vh;
+        font-weight: bold;
+        margin: 0vw 3vw;
+        margin-top: 1vh;
+        text-align: center;
+        width: 17.5vw;
+      }
+      .notas span{
+        font-size: 6vh;
+      }
+      .nomes h2{
+        color: rgba(255, 0, 0, 1);
+        font-size: 4vh;
+        margin: 3vh 0;
+        text-align: left;
+      }
+      .local p{
+        margin: 0vw 3vw;
+        text-decoration: underline;
+        font-size: 4vh;
+        text-align: left;
+      }
+
+    footer {
+        background-color: black;
+        margin-top: 20px;
+        position: relative;
+        height: 90px;
+        width: 100%;
+    }
+
+    .footer_1 {
+        width: 462px;
+        color: rgba(255,255,255,1);
+        position: absolute;
+        top: 21px;
+        left: 10px;
+        font-family: "Inter";
+        font-weight: Medium;
+        font-size: 32px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .footer_2 {
+        width: 520px;
+        color: rgba(255,0,0,1);
+        position: absolute;
+        top: 21px;
+        left: 820px;
+        font-family: "Inter";
+        font-weight: Medium;
+        font-size: 32px;
+        opacity: 1;
+        text-align: left;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+        <a href="1introducao.html">
+            <div id="bolinha"></div>
+        </a>
+      <div><h1>Localização</h1></div>
+    </header>
+    <main>
+      <section id="variedades">
+        <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3604950145054!2d-46.637450549823264!3d-23.555492867184732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f0881d1c95%3A0x45d5821319617d9!2sBairro%20da%20Liberdade!5e0!3m2!1spt-BR!2sbr!4v1667513771605!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0 left =50%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <table>
+          <tr>
+            <th>
+              <h1>Vantagens do Local:</h1>
+              <p id="legenda">Motivos para visitar o bairro e frequentá-lo.</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <img src="imagens/iconecarro.png" alt="" class="icon esquerda" />
+              <p>Fácil acesso</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="imagens/iconecentro.png" alt="" class="icon direita" />
+              <p>Centro da cidade de São Paulo</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="imagens/iconese.png" alt="" class="icon esquerda" />
+              <p>Próximo a Sé</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="imagens/iconemetro.png" alt="" class="icon direita" />
+              <p>Próximo a estações de metrô</p>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section id="estacoes">
+        <div class="tiunder"><h1 class="title">Estações próximas</h1></div>
+        <div id="cards">
+          <table style="position: relative;left: 2vw;">
+            <tr class="imagens_estações">
+              <td><img src="imagens/estaliber.png" alt="" /></td>
+              <td><img src="imagens/estavergue.png" alt="" /></td>
+              <td><img src="imagens/estasaojoaq.png" alt="" /></td>
+            </tr>
+            <tr class="notas">
+              <td>
+                <img src="imagens/estrelinha.png" alt="" style="float: left;position: relative;left: 4vw;"/>
+                <p><span>4.6/</span>5</p>
+              </td>
+              <td>
+                <img src="imagens/estrelinha.png" alt="" style="float: left;position: relative;left: 4vw;"/>
+                <p><span>4.3/</span>5</p>
+              </td>
+              <td>
+                <img src="imagens/estrelinha.png" alt="" style="float: left;position: relative;left: 4vw;"/>
+                <p><span>4.2/</span>5</p>
+              </td>
+            </tr>
+            <tr class="nomes">
+              <td><h2>Estação Liberdade</h2></td>
+              <td><h2>Estação Vergueiro</h2></td>
+              <td><h2>Estação São Joaquim</h2></td>
+            </tr>
+            <tr class="local">
+              <td>
+                <img src="imagens/iconelocal.png" alt="" style="float: left" />
+                <p>Japão - Liberdade</p>
+              </td>
+              <td>
+                <img src="imagens/iconelocal.png" alt="" style="float: left" />
+                <p>Vergueiro</p>
+              </td>
+              <td>
+                <img src="imagens/iconelocal.png" alt="" style="float: left" />
+                <p>São Joaquim</p>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr class="imagens_estações">
+              <td><img src="imagens/estase.png" alt="" /></td>
+              <td><img src="imagens/estapara.png" alt="" /></td>
+            </tr>
+            <tr class="notas">
+              <td>
+                <img src="imagens/estrelinha.png" alt="" style="float: left;position: relative;left: 4vw;"/>
+                <p><span>3.9/</span>5</p>
+              </td>
+              <td>
+                <img src="imagens/estrelinha.png" alt="" style="float: left;position: relative;left: 4vw;"/>
+                <p><span>4.3/</span>5</p>
+              </td>
+            </tr>
+            <tr class="nomes">
+              <td><h2>Estação da Sé</h2></td>
+              <td><h2>Estação Paraíso</h2></td>
+            </tr>
+            <tr class="local">
+              <td>
+                <img src="imagens/iconelocal.png" alt="" style="float: left;" />
+                <p>Sé</p>
+              </td>
+              <td>
+                <img src="imagens/iconelocal.png" alt="" style="float: left" />
+                <p>Paraíso</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <span class="footer_1">Localização</span>
+        <span class="footer_2">Bairro Liberdade, o oriente em SP!</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+<style>
+    @font-face {
+        font-family: "Inter";
+        src: url(fontes/Inter/Inter-VariableFont_slnt\,wght.ttf)
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src: url(fontes/Roboto/Roboto-Thin.ttf)
+    }
+
+    nav {
+        margin: 0 auto;
+        min-width: 95% 3000px;
+        background: transparent;
+    }
+
+    nav::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    nav ul li {
+        float: left;
+        position: relative;
+        left: 5%;
+    }
+
+    nav ul li a {
+        display: block;
+        color: red;
+        text-decoration: none;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-size: 28px;
+        padding: 1rem 2rem;
+        padding-bottom: 30px;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        z-index: 1;
+    }
+
+    nav ul li a:hover{
+        background-color: darkred;
+        color: white;
+    }
+
+    nav ul li a:not(:only-child)::after {
+        padding-left: 4px;
+        content: '▾';
+    }
+
+    nav ul li ul li {
+        min-width: 190px;
+        z-index: 2;
+    }
+
+    nav ul li ul li a {
+        background-color: white;
+        list-style-type: none;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 20px;
+        padding-left: 0px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgb(255, 148, 148);
+        z-index: 3;
+    }
+
+    .bolinha {
+        margin: 0 auto;
+        background-color: red;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        border: solid black;
+    }
+
+    .bolinha li {
+        list-style-type: none
+    }
+
+    .bolinha:hover {
+        background-color: darkred;
+        border-color: transparent;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        background: #fff;
+        box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+    }
+
+    nav ul li a:hover ~ .submenu {
+        display: inline-block;
+        color: red;
+    }
+
+    main {
+        min-width: 100%;
+        z-index: 4;
+    }
+
+    main #início h1 {
+        padding-top: 130px;
+        font-size: 25px;
+        color: #4E4E4E;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-weight: 10;
+        position: absolute;
+    }
+
+    main #início h1:first-line {
+        color: red;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 150px;
+    }
+
+    main #imagem {
+        width: 100px;
+        display: inline-block;
+        margin-left: 55%;
+    }
+
+    main buttom {
+        display: block;
+        margin: auto;
+        padding: 30px;
+        width: 298px;
+        height: 40px;
+        text-align: center;
+        border-radius: 41px;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: white;
+        background-color: red;
+        border: solid black;
+
+    }
+
+    main buttom:hover {
+        background-color: darkred;
+        color: white;
+        border: none;
+    }
+    main #cultura {
+        padding-top: 30px;
+        width: 100%;
+        left: 0px;
+    }
+
+    main #imagem2 img {
+        width: 100%;
+    }
+
+    main #cultura h1 {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: #B52932;
+        position: absolute;
+    }
+
+    footer {
+    color: #555;
+    font-size:12px;
+    margin-top:5em;
+    text-align:center;
+    }
+
+    footer a {
+    color:#008FEA;
+    text-decoration:none;
+    }
+
+</style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="bolinha">
+            <li><a href="1introducao.html"></a>
+        </div>
+        <ul>
+        <li class="menu"><a href="2historia.html">História</a>
+            <ul class="submenu">
+                <li><a href="2historia.html">Criação</a></li>
+                <li><a href="2historia.html">Imigração</a></li>
+            </ul>
+        <li class="menu"><a href="3comercios.html">Comércio</a>
+            <ul class="submenu">
+                <li><a href="3comercios.html">Shopping Sogo</a></li>
+                <li><a href="3comercios.html">Feira da Liberdade</a></li>
+                <li><a href="3comercios.html">Trade Center Shop</a></li>
+                <li><a href="3comercios.html">Ikekasi Cosméticos</a></li>
+            </ul>
+        </li>
+        <li clss="menu"><a href="4localizacao.html">Localização</a>
+            <ul class="submenu">
+                <li><a href="4localizacao.html">Vantagens</a></li>
+                <li><a href="4localizacao.html">Estações</a></li>
+            </ul>
+        <li><a href="5videos.html">Vídeo</a>
+        <li><a href="6formulario.html">Formulário</a>
+    </ul>
+    </nav>
+</header>
+<main>
+    <div id="início">
+        <h1>Liberdade <br> História do bairro e suas características</h1>
+        <div id="imagem"><img src="imagens/imagem_1_bairro.png" alt="Imagem 1"></div>
+        <buttom>Saiba Mais</buttom>
+    </div>
+
+    <div id="cultura">
+        <h1>O bairro da cultura Japonesa <br> ようこそ (bem vindos)!</h1>
+        <div id="imagem2"><img src="imagens/imagem_2_liberdade.png" alt="Imagem 2"></div>
+    </div>
+</main>
+</body>
+</html>

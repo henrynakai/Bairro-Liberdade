@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Comércios</title>
+    <style>
+    @font-face {
+        font-family: "Inter";
+        src: url(fontes/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #A53028;
+    }
+
+    header {
+        background-color: #A53028;
+        width: 100vw;
+        padding-top: 4vh;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        padding-bottom: 10px;
+    }
+
+    header div:nth-child(2) {
+        height: 9vh;
+        width: 25vw;
+        color: white;
+        border-bottom: 3px solid rgba(202, 45, 45, 1);
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: -2vw;
+    }
+
+    header h1 {
+        margin: 0;
+        height: 0;
+        width: 25vw;
+        text-align: center;
+        font-size: 4vw;
+        font-family: "Inter", Arial, Helvetica, sans-serif;
+    }
+
+    #bolinha {
+        height: 8vh;
+        width: 8vh;
+        border: 3px solid black;
+        background-color: red;
+        border-radius: 100%;
+        float: left;
+        margin-left: 4vh;
+    }
+
+    .primeira_segunda {
+        margin: auto;
+        width: 500px;
+        margin-top: 0px;
+    }
+
+    .primeira_segunda img {
+        height: 407px;
+    }
+
+    .primeira_segunda h1 {
+        margin-top: -10px;
+        font-family: "Inter";
+        font-weight: 700;
+        text-align: center;
+        background-color: lightgray;
+        height: 150px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        padding-top: 20px;
+    }
+
+    .primeira_segunda h1 ul {
+        font-family: "Inter";
+        font-size: 14px;
+        font-weight: 12;
+        text-align: left;
+    }
+
+    footer {
+        background-color: black;
+        margin-top: 20px;
+        position: relative;
+        height: 90px;
+        width: 100%;
+    }
+
+
+    .footer_1 {
+        width: 462px;
+        color: rgba(255,255,255,1);
+        position: absolute;
+        top: 21px;
+        left: 10px;
+        font-family: "Inter";
+        font-weight: Medium;
+        font-size: 32px;
+        opacity: 1;
+        text-align: left;
+    }
+
+    .footer_2 {
+        width: 520px;
+        color: rgba(255,0,0,1);
+        position: absolute;
+        top: 21px;
+        left: 820px;
+        font-family: "Inter";
+        font-weight: Medium;
+        font-size: 32px;
+        opacity: 1;
+        text-align: left;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="1introducao.html">
+            <div id="bolinha"></div>
+        </a>
+        <div><h1>Comércios</h1></div>
+    </header>
+
+    <main>
+        <table class="primeira_segunda">
+            <tbody><tr>
+              <td>
+                <img src="imagens/imagem_1_feira_da_liberdade.png" alt="Feira da Liberdade">
+                <h1>Feira da Liberdade
+                <ul>
+                    <li>Local com diversos cosméticos</li>
+                    <li>Imãs, colares, itens culturais japoneses</li>
+                    <li>Culinária diversificada (japonesa, alemã, chinesa, coreana, tailandesa)</li>
+                </ul>
+                </h1>
+              </td>
+              <td style="width: 6vw; border: 0px"></td>
+              <td>
+                <img src="imagens/imagem_2_shopping_sogo.png" alt="Shopping Sogo">
+                <h1>Shopping Sogo
+                <ul>
+                    <li>Loja com brinquedos, roupas, papelarias e outros</li>
+                    <li>Conhecido pela diversidade de itens</li>
+                    <li>Galeria tradicional nos bairros</li>
+                </ul>
+                </h1>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="primeira_segunda">
+            <tbody><tr>
+              <td>
+                <img src="imagens/imagem_3_trade_center.png" alt="Trade Center">
+                <h1>Trade Center
+                    <ul>
+                        <li>Design e arquiteturas orientais</li>
+                        <li>Fácil acesso, próximo a estação de metrô Liberdade</li>
+                        <li>Lojas com Variedades</li>
+                    </ul>
+                </h1>
+              </td>
+              <td style="width: 6vw; border: 0px"></td>
+              <td>
+                <img src="imagens/imagem_4_ikekasi.png" alt="Ikekasi Cosméticos">
+                <h1>Ikesaki Cosméticos
+                    <ul>
+                        <li>Diversos produtos cosméticos;</li>
+                        <li>Traz visitantes ao bairro duranto o ano inteiro;</li>
+                        <li>Referêncai no mercado de hair care e cosméticos em geral;</li>
+                        <li>Fácil acesso com 2 grandes lojas;</li>
+                    </ul>
+                </h1>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </main>
+    <footer>
+        <span class="footer_1">Comércios do Bairro</span>
+        <span class="footer_2">Bairro Liberdade, o oriente em SP!</span>
+    </footer>
+</body>
+</html>
